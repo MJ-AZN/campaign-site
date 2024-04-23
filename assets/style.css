@@ -1,0 +1,47 @@
+/* General styles for all screen sizes */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+}
+
+body {
+    background-color: #6b7ec5;
+    font-family: 'Libre Baskerville', Times, serif;
+}
+
+header {
+    padding: 20px;
+    background-color: #11143c;
+    color: #ffffff;
+    text-align: center;
+    font-size: 24px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column; /* Change to column layout for mobile */
+    padding: 20px;
+}
+
+.text, .photo {
+    margin-bottom: 20px; /* Add space between text and photo */
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Media query for screens smaller than 768px (typical tablets and phones) */
+@media (max-width: 768px) {
+    .content {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .photo {
+        max-width: 100%; /* Make the photo full width on smaller screens */
+    }
+}
